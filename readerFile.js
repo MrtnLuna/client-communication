@@ -95,7 +95,7 @@ class readerFile{
     
 
     match(msg){
-        console.log('Lee data: ', msg)
+        console.log('Data: ', msg)
         let message = msg;
         var expR =  /Error|Warning/gi
         var comparar = message.match(expR)
@@ -134,17 +134,15 @@ class readerFile{
                 
                 if (value.match(element.message) && eType.match(alertType[0]) ){
                    
-                    console.log('Re contra Pasa!')
+                    console.log('Event and Type Match!..')
                   }
             }
         
 
          if(value.match(element.message)){
-             console.log('Mismo msg')
+             console.log('Message match')
          }
-        /* if(alertType[0].match(element.type)){
-             console.log('Mismo tipo')
-         }*/
+      
 
        });
       };
